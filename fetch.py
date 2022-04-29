@@ -4,7 +4,7 @@
 from urllib.request import urlopen
 import argparse
 
-parser = argparse.ArgumentParser("Retrieve a URL, displaying in terminal or saving to a file")
+parser = argparse.ArgumentParser(description="Retrieve a URL, displaying in terminal or saving to a file")
 parser.add_argument("-o","--output",help="Output filename (default is to print to terminal)")
 parser.add_argument("-v","--verbose",action="store_true",help="Verbose messages")
 parser.add_argument("--no-default-http",action="store_true",help="Don't add http:// to URL without a protocol")
